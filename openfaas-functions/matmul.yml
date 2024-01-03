@@ -1,0 +1,19 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: $OPENFAAS_GATEWAY
+functions:
+  matmul:
+    lang: python3
+    handler: ./matmul
+    image: $USERID/$IMAGE_NAME:$TAG
+    limits:
+      memory: 256Mi
+      cpu: 150m
+    requests:
+      memory: 256Mi
+      cpu: 150m
+    environment:
+      exec_timeout: '10s'
+      read_timeout: '10s'
+      write_timeout: '10s'
