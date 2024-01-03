@@ -8,6 +8,7 @@ Function-as-a-Service (FaaS) introduces a lightweight, function-based cloud exec
 ### System Setup and Architecture <br>
 We set up our experimental multi-node cluster using NeCTAR (Australian National Research Cloud Infrastructure) services on the *Melbourne Research Cloud*. It includes a combination of 2 nodes with `12/48`, 1 node with `16/64`, 1 node with `8/32` and 1 node with `4/16` vCPU/GB-RAM configurations. We deploy *OpenFaaS* along with Prometheus service on MicroK8s (`v1.27.2`), however, we used Gateway `v0.26.3 `due to scaling limitations in the latest version and remove its alert manager component to disable rps-based scaling.
 
+(For best resolution, kindly use Github's `White Theme`)
 ![ArchitectureDiagram](./images/systemArchitectureDiagram.png)
 
 
@@ -16,6 +17,7 @@ We set up our experimental multi-node cluster using NeCTAR (Australian National 
 ### LSTM-PPO based AutoScaling Solution
 The core component of the proposed autoscaling solution is the integration of recurrent units with a fully-connected __multi-layer perceptron__ (MLP) that takes into environment observation and maintains a hidden internal state to retain relevant information. The LSTM layer is incorporated into both __actor__ and __critic__ networks to retain information i.e., the output of the LSTM layer is fed into fully-connected MLP layers, where the actor (policy network) is responsible for learning an action selection policy and the critic network serves as a guiding measure to improve actor's decision. The network parameters are updated as per PPO clipped surrogate objective function which helps the agent balance its degree of exploration and knowledge exploitation. It further improves network sample efficiency and conserves large policy updates. 
 
+(For best resolution, kindly use Github's `White Theme`)
 ![AgentArchitecture](./images/agentArchitecture.png)
 
 ---
