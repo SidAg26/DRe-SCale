@@ -1,0 +1,4 @@
+gymnasium
+tensorflow
+kubernetes
+prometheus-api-client
