@@ -5,3 +5,4 @@ This folder contains the explored Deep Reinforcement Learning agents for Serverl
 -   [LSTM-PPO](./LSTM-PPO/)
 -   [PPO](./PPO/)
 -   [DRQN](./DRQN/)
+-   [LSTM-SAC + SAC](./SAC(+LSTM))
