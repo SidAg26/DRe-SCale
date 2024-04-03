@@ -26,6 +26,7 @@ The core component of the proposed autoscaling solution is the integration of re
 1.  [LSTM integrated Proximal Policy Optimisation](./scaling-agents/LSTM-PPO/) (LSTM-PPO/Recurrent-PPO)
 2.  [vanilla Proximal Policy Optimisation](./scaling-agents/PPO/) (PPO)
 3.  [Deep Recurrent Q-Network](./scaling-agents/DRQN/) (LSTM integrated DQN/DRQN)
+4.  [LSTM integrated Soft-Actor-Critic](./scaling-agents/SAC(+LSTM)) (LSTM-SAC and SAC)
 
 ### Training and Evaluation
 1.  [Experimental Results](/experimental-results/images/)
