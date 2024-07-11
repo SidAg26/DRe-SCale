@@ -31,3 +31,20 @@ The core component of the proposed autoscaling solution is the integration of re
 ### Training and Evaluation
 1.  [Experimental Results](/experimental-results/images/)
 2.  [Analysis File](./experimental-results/analysisUtility.ipynb)
+
+---
+
+## References
+
+To cite this repository in your works, please use the following entry:
+```
+@ARTICLE{10496867,
+  author={Agarwal, Siddharth and Rodriguez, Maria A. and Buyya, Rajkumar},
+  journal={IEEE Transactions on Services Computing}, 
+  title={A Deep Recurrent-Reinforcement Learning Method for Intelligent AutoScaling of Serverless Functions}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-12},
+  doi={10.1109/TSC.2024.3387661}}
+```
